@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfoliocss.css">
+    <title>Portfolio GALES Quentin</title>
+</head>
+<body class="top">
+    <nav>
+        <ul>
+            <li><a href="pageaccueilportefolio.html">Accueil</a></li>
+            <li><a href="competences.html">Mes compétences </a></li>
+            <li><a href="projets.html">Mes projets</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="doc/cv.pdf" class="cv-button" target="_blank">Télécharger mon CV</a></li>      
+        </ul>
+
+        
+    </nav>
+    <header class="banner">
+        <div class="video-container">
+        <video autoplay muted>
+            <source src="rephoto/vgcanva.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        </div>
+        
+            <div class="citation">
+                " Le code est la peinture d'aujourd'hui,<br> chaque ligne est une touche qui peut transformer une idée en réalité. "
+            </div>
+        <div class="overlay">
+        </div>
+        
+        
+    </header>
+    <main>
+        <div class="bvn">
+        Bienvenue sur mon site internet ! <br> <p>Je m'appelle Quentin GALES et je suis étudiant en Réseaux et Télécommunications !</p>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Portfolio de GALES Quentin</p>
+            <div class="social-icons">
+                <a href="https://github.com/QuentinGales" target="_blank" aria-label="GitHub">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                </a>
+                <a href="https://linkedin.com/in/quentin-gales" target="_blank" aria-label="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>        
+        window.addEventListener('scroll', () => {
+          const banner = document.querySelector('.banner');
+          const scrollPosition = window.scrollY;
+        
+          // Déplacer la bannière et ajuster l'opacité
+          banner.style.transform = `translateY(-${scrollPosition / 2}px)`; // Effet de défilement de la bannière
+          banner.style.opacity = 1 - (scrollPosition / 500); // Réduire l'opacité au fur et à mesure du scroll
+        });
+   
+    </script>
+</body>
+
+</html>
